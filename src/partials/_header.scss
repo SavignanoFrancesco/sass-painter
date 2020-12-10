@@ -1,15 +1,16 @@
 header{
-    background: $brand_secondary;
+    background: rgba($brand_secondary,0.9);
 
     .upper-header{
         ul{
             @include flex(row, flex-end, center);
 
             li{
-                padding: 10px 5px;
+                padding: 10px 10px;
 
                 span{
                     color: rgba($brand_primary, 0.7);
+                    padding: 0 5px;
                 }
 
                 i{
@@ -24,7 +25,7 @@ header{
             @include flex(row, flex-start, center);
 
             .logo{
-                width: 90%;
+                width: 75%;
 
                 // border: 1px solid white;
             }
@@ -32,7 +33,7 @@ header{
             li{
                 // border: 1px solid white;
                 padding: 20px 20px;
-                font-size: $font_size * 1.1;
+                font-size: $font_size * 1.15;
 
                 span{
 

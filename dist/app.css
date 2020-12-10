@@ -45,7 +45,7 @@ a {
 }
 
 header {
-  background: black;
+  background: rgba(0, 0, 0, 0.9);
 }
 
 header .upper-header ul {
@@ -56,15 +56,16 @@ header .upper-header ul {
 }
 
 header .upper-header ul li {
-  padding: 10px 5px;
+  padding: 10px 10px;
 }
 
 header .upper-header ul li span {
   color: rgba(255, 255, 255, 0.7);
+  padding: 0 5px;
 }
 
 header .upper-header ul li i {
-  color: blue;
+  color: dodgerblue;
 }
 
 header .bottom-header ul {
@@ -75,12 +76,12 @@ header .bottom-header ul {
 }
 
 header .bottom-header ul .logo {
-  width: 90%;
+  width: 75%;
 }
 
 header .bottom-header ul li {
   padding: 20px 20px;
-  font-size: 15.4px;
+  font-size: 16.1px;
 }
 
 header .bottom-header ul li i {
