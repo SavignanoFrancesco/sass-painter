@@ -25,16 +25,22 @@ header{
 
             .logo{
                 width: 90%;
-                align-self: center;
+
+                // border: 1px solid white;
             }
 
             li{
                 // border: 1px solid white;
                 padding: 20px 20px;
-                font-size: $font_size * 1.2;
+                font-size: $font_size * 1.1;
+
+                span{
+
+                }
 
                 i{
                     color: rgba($brand_primary, 0.7);
+                    font-size: $font_size * 0.6;
                 }
             }
         }
