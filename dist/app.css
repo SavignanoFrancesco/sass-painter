@@ -94,6 +94,75 @@ header .bottom-header ul li i {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.jumbotron .container {
   height: 450px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.jumbotron .container .jumbo-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 0;
+  align-self: flex-end;
+  flex-grow: 0.7;
+  border: 1px solid white;
+}
+
+.jumbotron .container .jumbo-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1.5;
+  border: 1px solid white;
+}
+
+.jumbotron .container .jumbo-center li {
+  padding: 10px 0;
+}
+
+.jumbotron .container .jumbo-center li .download-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid white;
+  width: 70%;
+  background-color: grey;
+}
+
+.jumbotron .container .jumbo-center li .download-button .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 10px 5px;
+  padding: 5px 10px;
+  border-right: 1px solid white;
+}
+
+.jumbotron .container .jumbo-center li .download-button .right {
+  color: white;
+}
+
+.jumbotron .container .jumbo-center li .download-button .right i {
+  font-size: 28px;
+  padding: 10px;
+}
+
+.jumbotron .container .jumbo-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1.5;
+  border: 1px solid white;
 }
 

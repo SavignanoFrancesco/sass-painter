@@ -3,5 +3,55 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 450px;
+
+    .container{
+        height: 450px;
+        @include flex(row, center, center);
+
+        .jumbo-left{
+            @include flex(row, flex-end, center);
+            padding: 20px 0;
+            align-self: flex-end;
+            flex-grow: 0.7;
+            border: 1px solid white;
+        }
+        .jumbo-center{
+            @include flex(column, flex-end, center);
+            flex-grow: 1.5;
+            border: 1px solid white;
+
+
+            li{
+                padding: 10px 0;
+
+                .download-button{
+                    @include flex(row, flex-start, center);
+                    border: 1px solid white;
+                    width: 70%;
+                    background-color: grey;
+
+
+                    .left{
+                        @include flex(column, center, flex-start);
+                        margin: 10px 5px;
+                        padding: 5px 10px;;
+                        border-right: 1px solid $brand_primary;
+                    }
+                    .right{
+                        color: $brand_primary;
+
+                        i{
+                            font-size: $font_size * 2;
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .jumbo-right{
+            @include flex(column, flex-end, center);
+            flex-grow: 1.5;
+            border: 1px solid white;
+        }
+    }
 }
