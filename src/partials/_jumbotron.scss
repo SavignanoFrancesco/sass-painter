@@ -9,40 +9,66 @@
         @include flex(row, center, center);
 
         .jumbo-left{
-            @include flex(row, flex-end, center);
+            @include flex(row, center, center);
             padding: 20px 0;
             align-self: flex-end;
-            flex-grow: 0.7;
+            flex-grow: 1;
             border: 1px solid white;
+
+            span{
+                color: rgba($brand_primary, 0.8);
+            }
         }
         .jumbo-center{
-            @include flex(column, flex-end, center);
-            flex-grow: 1.5;
+            @include flex(column, flex-end, flex-start);
+            flex-grow: 0.5;
             border: 1px solid white;
+            padding: 5px;
 
 
             li{
                 padding: 10px 0;
 
+
+
+                h1{
+                    font-size: $font-size * 2;
+                    font-weight: lighter;
+                }
+                h2{
+                    font-size: $font-size * 1.7;
+                    font-weight: lighter;
+                }
+                i{
+                    color: rgba($brand_primary, 0.5);
+                    font-size: $font_size * 0.8;
+                    align-self: center;
+                    padding: 2px;
+                }
+                span{
+                    font-size: $font-size * 1.2;
+                }
+
                 .download-button{
                     @include flex(row, flex-start, center);
                     border: 1px solid white;
-                    width: 70%;
-                    background-color: grey;
+                    width: 55%;
+                    background-color: dimgrey;
 
 
                     .left{
                         @include flex(column, center, flex-start);
-                        margin: 10px 5px;
+                        margin: 8px 5px;
                         padding: 5px 10px;;
                         border-right: 1px solid $brand_primary;
                     }
                     .right{
-                        color: $brand_primary;
+
 
                         i{
+                            color: $brand_primary;
                             font-size: $font_size * 2;
-                            padding: 10px;
+                            padding: 5px 10px;
                         }
                     }
                 }
@@ -50,7 +76,7 @@
         }
         .jumbo-right{
             @include flex(column, flex-end, center);
-            flex-grow: 1.5;
+            flex-grow: 2;
             border: 1px solid white;
         }
     }

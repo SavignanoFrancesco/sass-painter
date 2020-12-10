@@ -5,6 +5,7 @@
 }
 
 body {
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
 }
 
@@ -112,25 +113,51 @@ header .bottom-header .container ul li i {
 .jumbotron .container .jumbo-left {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   padding: 20px 0;
   align-self: flex-end;
-  flex-grow: 0.7;
+  flex-grow: 1;
   border: 1px solid white;
+}
+
+.jumbotron .container .jumbo-left span {
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .jumbotron .container .jumbo-center {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: center;
-  flex-grow: 1.5;
+  align-items: flex-start;
+  flex-grow: 0.5;
   border: 1px solid white;
+  padding: 5px;
 }
 
 .jumbotron .container .jumbo-center li {
   padding: 10px 0;
+}
+
+.jumbotron .container .jumbo-center li h1 {
+  font-size: 28px;
+  font-weight: lighter;
+}
+
+.jumbotron .container .jumbo-center li h2 {
+  font-size: 23.8px;
+  font-weight: lighter;
+}
+
+.jumbotron .container .jumbo-center li i {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 11.2px;
+  align-self: center;
+  padding: 2px;
+}
+
+.jumbotron .container .jumbo-center li span {
+  font-size: 16.8px;
 }
 
 .jumbotron .container .jumbo-center li .download-button {
@@ -139,8 +166,8 @@ header .bottom-header .container ul li i {
   justify-content: flex-start;
   align-items: center;
   border: 1px solid white;
-  width: 70%;
-  background-color: grey;
+  width: 55%;
+  background-color: dimgrey;
 }
 
 .jumbotron .container .jumbo-center li .download-button .left {
@@ -148,18 +175,15 @@ header .bottom-header .container ul li i {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin: 10px 5px;
+  margin: 8px 5px;
   padding: 5px 10px;
   border-right: 1px solid white;
 }
 
-.jumbotron .container .jumbo-center li .download-button .right {
-  color: white;
-}
-
 .jumbotron .container .jumbo-center li .download-button .right i {
+  color: white;
   font-size: 28px;
-  padding: 10px;
+  padding: 5px 10px;
 }
 
 .jumbotron .container .jumbo-right {
@@ -167,7 +191,7 @@ header .bottom-header .container ul li i {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  flex-grow: 1.5;
+  flex-grow: 2;
   border: 1px solid white;
 }
 
