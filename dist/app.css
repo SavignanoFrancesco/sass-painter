@@ -68,23 +68,28 @@ header .upper-header ul li i {
   color: dodgerblue;
 }
 
-header .bottom-header ul {
+header .bottom-header .container {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-header .bottom-header ul .logo {
-  width: 75%;
+header .bottom-header .container ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-header .bottom-header ul li {
+header .bottom-header .container ul li {
   padding: 20px 20px;
   font-size: 16.1px;
 }
 
-header .bottom-header ul li i {
+header .bottom-header .container ul li i {
   color: rgba(255, 255, 255, 0.7);
   font-size: 8.4px;
 }
