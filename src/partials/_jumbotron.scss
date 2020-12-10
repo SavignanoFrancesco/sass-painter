@@ -5,7 +5,7 @@
     background-repeat: no-repeat;
 
     .container{
-        height: 450px;
+        height: 480px;
         @include flex(row, center, center);
         flex-wrap: wrap;
 
@@ -16,7 +16,7 @@
             align-self: flex-end;
             // flex-grow: 1;
             width: 20%;
-            border: 1px solid white;
+            // border: 1px solid white;
 
 
 
@@ -29,7 +29,7 @@
             @include flex(column, flex-end, flex-start);
             // flex-grow: 1;
             width: 40%;
-            border: 1px solid white;
+            // border: 1px solid white;
             padding: 5px;
 
             li{
@@ -94,9 +94,9 @@
             @include flex(column, flex-start, flex-start);
             // flex-grow: 1;
             width: 35%;
-            border: 1px solid white;
-            height: calc(100% - 30px);
-            margin-top: 30px;
+            // border: 1px solid white;
+            height: calc(100% - 20px);
+            margin-top: 20px;
             padding: 50px 20px;
             position: relative;
             background: $brand_secondary;
@@ -105,25 +105,48 @@
                 margin: 10px 0;
             }
 
+            .price{
+
+                & > *{
+                    padding: 2px 0;
+                }
+
+                h2{
+                    font-weight: lighter;
+                    font-size: $font_size * 2;
+                }
+
+                span{
+                    text-transform: uppercase;
+                    color: rgba($brand_primary,0.6);
+                    font-size: $font_size * 1.1;
+                }
+
+            }
 
             img{
                 position: absolute;
-                top: 5px;
+                top: 10px;
                 right: 20px;
             }
 
             .buy-button{
-                padding: 10px 20px;
-                background: $brand_tertiary;
+                padding: 10px 40px;
+                background: rgba($brand_tertiary, 0.9);
+                text-transform: uppercase;
+
+                &:hover{
+                    background: $brand_tertiary;
+                }
             }
 
             .limited-time-offer{
                 @include flex(column, flex-start, flex-start);
                 background: $brand_primary;
-                padding: 5px;
+                padding: 10px;
 
                 & > *{
-                    padding: 5px;
+                    padding: 4px;
                 }
 
                 h3,span{

@@ -121,7 +121,7 @@ header .bottom-header .container ul li i {
 }
 
 .jumbotron .container {
-  height: 450px;
+  height: 480px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -137,7 +137,6 @@ header .bottom-header .container ul li i {
   padding: 20px 0;
   align-self: flex-end;
   width: 20%;
-  border: 1px solid white;
 }
 
 .jumbotron .container .jumbo-left span {
@@ -151,7 +150,6 @@ header .bottom-header .container ul li i {
   justify-content: flex-end;
   align-items: flex-start;
   width: 40%;
-  border: 1px solid white;
   padding: 5px;
 }
 
@@ -225,9 +223,8 @@ header .bottom-header .container ul li i {
   justify-content: flex-start;
   align-items: flex-start;
   width: 35%;
-  border: 1px solid white;
-  height: calc(100% - 30px);
-  margin-top: 30px;
+  height: calc(100% - 20px);
+  margin-top: 20px;
   padding: 50px 20px;
   position: relative;
   background: black;
@@ -237,14 +234,34 @@ header .bottom-header .container ul li i {
   margin: 10px 0;
 }
 
+.jumbotron .container .jumbo-right .price > * {
+  padding: 2px 0;
+}
+
+.jumbotron .container .jumbo-right .price h2 {
+  font-weight: lighter;
+  font-size: 28px;
+}
+
+.jumbotron .container .jumbo-right .price span {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 15.4px;
+}
+
 .jumbotron .container .jumbo-right img {
   position: absolute;
-  top: 5px;
+  top: 10px;
   right: 20px;
 }
 
 .jumbotron .container .jumbo-right .buy-button {
-  padding: 10px 20px;
+  padding: 10px 40px;
+  background: rgba(30, 144, 255, 0.9);
+  text-transform: uppercase;
+}
+
+.jumbotron .container .jumbo-right .buy-button:hover {
   background: dodgerblue;
 }
 
@@ -254,11 +271,11 @@ header .bottom-header .container ul li i {
   justify-content: flex-start;
   align-items: flex-start;
   background: white;
-  padding: 5px;
+  padding: 10px;
 }
 
 .jumbotron .container .jumbo-right .limited-time-offer > * {
-  padding: 5px;
+  padding: 4px;
 }
 
 .jumbotron .container .jumbo-right .limited-time-offer h3,
