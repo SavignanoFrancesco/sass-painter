@@ -1,14 +1,41 @@
 header{
     background: $brand_secondary;
 
-    ul{
-        @include flex(row, flex-end, center);
+    .upper-header{
+        ul{
+            @include flex(row, flex-end, center);
 
-        li{
-            padding: 10px 5px;
+            li{
+                padding: 10px 5px;
 
-            i{
-                color: $brand_tertiary;
+                span{
+                    color: rgba($brand_primary, 0.7);
+                }
+
+                i{
+                    color: $brand_tertiary;
+                }
+            }
+        }
+    }
+
+    .bottom-header{
+        ul{
+            @include flex(row, flex-start, center);
+
+            .logo{
+                width: 90%;
+                align-self: center;
+            }
+
+            li{
+                // border: 1px solid white;
+                padding: 20px 20px;
+                font-size: $font_size * 1.2;
+
+                i{
+                    color: rgba($brand_primary, 0.7);
+                }
             }
         }
     }
