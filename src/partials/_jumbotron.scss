@@ -7,14 +7,17 @@
     .container{
         height: 450px;
         @include flex(row, center, center);
+        flex-wrap: wrap;
 
         .jumbo-left{
 
             @include flex(row, center, center);
             padding: 20px 0;
             align-self: flex-end;
-            flex-grow: 1;
+            // flex-grow: 1;
+            width: 20%;
             border: 1px solid white;
+
 
 
             span{
@@ -24,7 +27,8 @@
         }
         .jumbo-center{
             @include flex(column, flex-end, flex-start);
-            flex-grow: 0.5;
+            // flex-grow: 1;
+            width: 40%;
             border: 1px solid white;
             padding: 5px;
 
@@ -52,7 +56,7 @@
                 .download-button{
                     @include flex(row, flex-start, center);
                     // border: 1px solid white;
-                    max-width: 50%;
+                    max-width: 45%;
                     background-color: dimgrey;
                     flex-grow: 0;
 
@@ -67,11 +71,11 @@
                         border-right: 1px solid $brand_primary;
 
                         h2{
-                            font-size: $font_size * 1.2;
+                            font-size: $font_size * 1;
                             text-transform: uppercase;
                         }
                         span{
-                            font-size: $font_size;
+                            font-size: $font_size * 0.8;
                         }
                     }
                     .right{
@@ -87,12 +91,58 @@
             }
         }
         .jumbo-right{
-            @include flex(column, flex-end, center);
-            flex-grow: 2;
+            @include flex(column, flex-start, flex-start);
+            // flex-grow: 1;
+            width: 35%;
             border: 1px solid white;
             height: calc(100% - 30px);
             margin-top: 30px;
+            padding: 50px 20px;
+            position: relative;
             background: $brand_secondary;
+
+            & > *{
+                margin: 10px 0;
+            }
+
+
+            img{
+                position: absolute;
+                top: 5px;
+                right: 20px;
+            }
+
+            .buy-button{
+                padding: 10px 20px;
+                background: $brand_tertiary;
+            }
+
+            .limited-time-offer{
+                @include flex(column, flex-start, flex-start);
+                background: $brand_primary;
+                padding: 5px;
+
+                & > *{
+                    padding: 5px;
+                }
+
+                h3,span{
+                    color: $brand_secondary;
+                }
+
+                h3{
+                    font-size: $font-size * 1.2;
+                    text-transform: uppercase;
+                }
+
+                a{
+                    color: $brand_tertiary;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
         }
     }
 }

@@ -108,6 +108,7 @@ header .bottom-header .container ul li i {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .jumbotron .container .jumbo-left {
@@ -117,7 +118,7 @@ header .bottom-header .container ul li i {
   align-items: center;
   padding: 20px 0;
   align-self: flex-end;
-  flex-grow: 1;
+  width: 20%;
   border: 1px solid white;
 }
 
@@ -131,7 +132,7 @@ header .bottom-header .container ul li i {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  flex-grow: 0.5;
+  width: 40%;
   border: 1px solid white;
   padding: 5px;
 }
@@ -166,7 +167,7 @@ header .bottom-header .container ul li i {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  max-width: 50%;
+  max-width: 45%;
   background-color: dimgrey;
   flex-grow: 0;
 }
@@ -186,12 +187,12 @@ header .bottom-header .container ul li i {
 }
 
 .jumbotron .container .jumbo-center li .download-button .left h2 {
-  font-size: 16.8px;
+  font-size: 14px;
   text-transform: uppercase;
 }
 
 .jumbotron .container .jumbo-center li .download-button .left span {
-  font-size: 14px;
+  font-size: 11.2px;
 }
 
 .jumbotron .container .jumbo-center li .download-button .right i {
@@ -203,12 +204,60 @@ header .bottom-header .container ul li i {
 .jumbotron .container .jumbo-right {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  flex-grow: 2;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 35%;
   border: 1px solid white;
   height: calc(100% - 30px);
   margin-top: 30px;
+  padding: 50px 20px;
+  position: relative;
   background: black;
+}
+
+.jumbotron .container .jumbo-right > * {
+  margin: 10px 0;
+}
+
+.jumbotron .container .jumbo-right img {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+}
+
+.jumbotron .container .jumbo-right .buy-button {
+  padding: 10px 20px;
+  background: dodgerblue;
+}
+
+.jumbotron .container .jumbo-right .limited-time-offer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: white;
+  padding: 5px;
+}
+
+.jumbotron .container .jumbo-right .limited-time-offer > * {
+  padding: 5px;
+}
+
+.jumbotron .container .jumbo-right .limited-time-offer h3,
+.jumbotron .container .jumbo-right .limited-time-offer span {
+  color: black;
+}
+
+.jumbotron .container .jumbo-right .limited-time-offer h3 {
+  font-size: 16.8px;
+  text-transform: uppercase;
+}
+
+.jumbotron .container .jumbo-right .limited-time-offer a {
+  color: dodgerblue;
+}
+
+.jumbotron .container .jumbo-right .limited-time-offer a:hover {
+  text-decoration: underline;
 }
 
