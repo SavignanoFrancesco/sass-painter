@@ -171,6 +171,10 @@ header .bottom-header .container ul li i {
   flex-grow: 0;
 }
 
+.jumbotron .container .jumbo-center li .download-button:hover {
+  opacity: 0.9;
+}
+
 .jumbotron .container .jumbo-center li .download-button .left {
   display: flex;
   flex-direction: column;

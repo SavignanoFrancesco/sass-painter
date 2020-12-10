@@ -15,7 +15,7 @@
             align-self: flex-end;
             flex-grow: 1;
             border: 1px solid white;
-            
+
 
             span{
                 color: rgba($brand_primary, 0.8);
@@ -56,6 +56,9 @@
                     background-color: dimgrey;
                     flex-grow: 0;
 
+                    &:hover{
+                        opacity: 0.9;
+                    }
 
                     .left{
                         @include flex(column, center, flex-start);
