@@ -65,6 +65,11 @@ header .upper-header ul li span {
   padding: 0 5px;
 }
 
+header .upper-header ul li span:hover {
+  color: white;
+  text-decoration: underline;
+}
+
 header .upper-header ul li i {
   color: dodgerblue;
 }
@@ -86,8 +91,16 @@ header .bottom-header .container ul {
 }
 
 header .bottom-header .container ul li {
-  padding: 20px 20px;
-  font-size: 16.1px;
+  padding: 18px 20px;
+  font-size: 14px;
+}
+
+header .bottom-header .container ul li:hover,
+header .bottom-header .container ul li:hover span,
+header .bottom-header .container ul li:hover i {
+  cursor: pointer;
+  background: white;
+  color: black;
 }
 
 header .bottom-header .container ul li i {

@@ -11,6 +11,12 @@ header{
                 span{
                     color: rgba($brand_primary, 0.7);
                     padding: 0 5px;
+
+                    &:hover{
+                        color: $brand_primary;
+                        text-decoration: underline;
+                    }
+
                 }
 
                 i{
@@ -35,8 +41,14 @@ header{
 
                 li{
                     // border: 1px solid white;
-                    padding: 20px 20px;
-                    font-size: $font_size * 1.15;
+                    padding: 18px 20px;
+                    font-size: $font_size * 1;
+
+                    &:hover, &:hover span, &:hover i{
+                        cursor: pointer;
+                        background: $brand_primary;
+                        color: $brand_secondary;
+                    }
 
                     span{
 
