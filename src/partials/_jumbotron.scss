@@ -9,14 +9,17 @@
         @include flex(row, center, center);
 
         .jumbo-left{
+
             @include flex(row, center, center);
             padding: 20px 0;
             align-self: flex-end;
             flex-grow: 1;
             border: 1px solid white;
+            
 
             span{
                 color: rgba($brand_primary, 0.8);
+                font-size: $font_size * 0.8;
             }
         }
         .jumbo-center{
@@ -25,11 +28,8 @@
             border: 1px solid white;
             padding: 5px;
 
-
             li{
                 padding: 10px 0;
-
-
 
                 h1{
                     font-size: $font-size * 2;
@@ -51,16 +51,25 @@
 
                 .download-button{
                     @include flex(row, flex-start, center);
-                    border: 1px solid white;
-                    width: 55%;
+                    // border: 1px solid white;
+                    max-width: 50%;
                     background-color: dimgrey;
+                    flex-grow: 0;
 
 
                     .left{
                         @include flex(column, center, flex-start);
                         margin: 8px 5px;
-                        padding: 5px 10px;;
+                        padding: 0px 10px;;
                         border-right: 1px solid $brand_primary;
+
+                        h2{
+                            font-size: $font_size * 1.2;
+                            text-transform: uppercase;
+                        }
+                        span{
+                            font-size: $font_size;
+                        }
                     }
                     .right{
 
@@ -78,6 +87,9 @@
             @include flex(column, flex-end, center);
             flex-grow: 2;
             border: 1px solid white;
+            height: calc(100% - 30px);
+            margin-top: 30px;
+            background: $brand_secondary;
         }
     }
 }
