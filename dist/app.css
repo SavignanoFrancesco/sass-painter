@@ -82,6 +82,11 @@ header .bottom-header .container {
   flex-wrap: wrap;
 }
 
+header .bottom-header .container .logo {
+  padding: 5px;
+  width: 80%;
+}
+
 header .bottom-header .container ul {
   display: flex;
   flex-direction: row;

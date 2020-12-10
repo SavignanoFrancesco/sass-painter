@@ -31,8 +31,8 @@ header{
             @include flex(row, flex-start, center);
             flex-wrap: wrap;
             .logo{
-
-
+                padding: 5px;
+                width: 80%;
                 // border: 1px solid white;
             }
             ul{
