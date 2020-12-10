@@ -9,8 +9,9 @@ header{
                 padding: 10px 10px;
 
                 span{
-                    color: rgba($brand_primary, 0.7);
+                    color: rgba($brand_primary, 0.5);
                     padding: 0 5px;
+                    font-size: $font_size * 0.9;
 
                     &:hover{
                         color: $brand_primary;
@@ -31,8 +32,8 @@ header{
             @include flex(row, flex-start, center);
             flex-wrap: wrap;
             .logo{
-                padding: 5px;
-                width: 80%;
+                padding: 8px;
+                width: 75%;
                 // border: 1px solid white;
             }
             ul{
