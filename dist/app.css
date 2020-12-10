@@ -29,3 +29,31 @@ span {
   color: white;
 }
 
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+header {
+  background: black;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header ul li {
+  padding: 0 5px;
+}
+
+header ul li i {
+  color: blue;
+}
+

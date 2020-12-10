@@ -1,0 +1,17 @@
+header{
+    background: $brand_secondary;
+
+    ul{
+        @include flex(row, flex-end, center);
+
+        li{
+            padding: 0 5px;
+
+            i{
+                color: $brand_tertiary;
+            }
+        }
+    }
+
+
+}
