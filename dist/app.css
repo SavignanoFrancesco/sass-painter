@@ -451,6 +451,22 @@ header .bottom-header .container ul li i {
   cursor: pointer;
 }
 
+#bottom-footer {
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+#bottom-footer .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#bottom-footer img {
+  margin: 0 10px;
+}
+
 .section-type1,
 .section-type2 {
   text-align: center;
