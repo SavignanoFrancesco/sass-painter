@@ -452,19 +452,44 @@ header .bottom-header .container ul li i {
 }
 
 #bottom-footer {
-  padding: 8px;
+  padding: 16px;
   background: rgba(0, 0, 0, 0.9);
 }
 
-#bottom-footer .container {
+#bottom-footer .container .img-links {
+  float: left;
+}
+
+#bottom-footer .container .img-links img {
+  margin: 0 10px;
+}
+
+#bottom-footer .container .terms {
+  padding: 20px 0;
+  float: right;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-#bottom-footer img {
-  margin: 0 10px;
+#bottom-footer .container .terms > * {
+  font-size: 12.6px;
+  padding: 0 10px;
+}
+
+#bottom-footer .container .terms span {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#bottom-footer .container .terms span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#bottom-footer .container .terms p {
+  color: white;
 }
 
 .section-type1,

@@ -75,12 +75,44 @@
 }
 
 #bottom-footer{
-    padding: $section_padding * 0.2;
+    padding: $section_padding * 0.4;
     background: rgba($brand_secondary, 0.9);
     .container{
-        @include flex(row, space-between, center);
+        // @include flex(row, space-between, center);
+
+        .img-links{
+            float: left;
+            img{
+                margin:0 ($spacing * 0.5);
+            }
+        }
+
+        .terms{
+            padding: $spacing 0;
+            // border: 1px solid white;
+            float: right;
+            @include flex(row,space-between,center);
+
+            & > *{
+                font-size: $font_size * 0.9;
+                padding: 0 ($spacing * 0.5);
+            }
+
+            span{
+                display: inline-block;
+                color: rgba($brand_primary,0.6);
+                &:hover{
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+
+            p{
+                color: $brand_primary;
+                // border: 1px solid white;
+
+            }
+        }
     }
-    img{
-        margin:0 ($spacing * 0.5);
-    }
+
 }
