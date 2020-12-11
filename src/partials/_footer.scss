@@ -29,4 +29,22 @@
         }
     }
 
+    .socials-container{
+        float: right;
+        .icon-box{
+            @include flex(row, center, center);
+            background: red;
+            width: $spacing * 1.7;
+            height: $spacing * 1.7;
+            // padding: $spacing * 0.2;
+            margin: $spacing * 0.1;
+            float: left;
+
+            i{
+                font-size: $font_size * 2;
+                color: $brand_primary;
+            }
+        }
+    }
+
 }

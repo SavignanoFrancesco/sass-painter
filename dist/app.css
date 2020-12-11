@@ -402,6 +402,27 @@ header .bottom-header .container ul li i {
   text-decoration: underline;
 }
 
+#upper-footer .socials-container {
+  float: right;
+}
+
+#upper-footer .socials-container .icon-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: red;
+  width: 34px;
+  height: 34px;
+  margin: 2px;
+  float: left;
+}
+
+#upper-footer .socials-container .icon-box i {
+  font-size: 28px;
+  color: white;
+}
+
 .section-type1,
 .section-type2 {
   text-align: center;
