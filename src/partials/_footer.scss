@@ -8,7 +8,7 @@
         padding: $spacing $spacing;
         width: calc(100% / 4);
         // border: 1px solid black;
-        @include flex(column, flex-start,center);
+        @include flex(column, flex-start,flex-start);
 
         h4,span{
             color: $brand_secondary;
@@ -21,7 +21,7 @@
         span{
             padding: ($spacing * 0.2) 0;
             font-size: $font_size * 0.9;
-            color: rgba($brand_secondary, 0.8);
+            color: rgba($brand_secondary, 0.7);
 
             &:hover{
                 text-decoration: underline;
@@ -31,18 +31,43 @@
 
     .socials-container{
         float: right;
+        padding: $spacing;
+
+
         .icon-box{
             @include flex(row, center, center);
-            background: red;
-            width: $spacing * 1.7;
-            height: $spacing * 1.7;
+            // background: red;
+            width: $spacing * 1.6;
+            height: $spacing * 1.6;
             // padding: $spacing * 0.2;
-            margin: $spacing * 0.1;
+            margin: $spacing * 0.2;
             float: left;
+            &:nth-child(1){
+                background: #e4405f;
+            }
+            &:nth-child(2){
+                background: darkslateblue;
+            }
+            &:nth-child(3){
+                background: dodgerblue;
+            }
+            &:nth-child(4){
+                background: firebrick;
+            }
+            &:nth-child(5){
+                background: firebrick;
+            }
+            &:nth-child(6){
+                background: sandybrown;
+            }
 
             i{
-                font-size: $font_size * 2;
+                font-size: $font_size * 1.6;
                 color: $brand_primary;
+
+            }
+            &:hover{
+                cursor: pointer;
             }
         }
     }
