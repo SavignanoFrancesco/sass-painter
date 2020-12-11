@@ -1,0 +1,24 @@
+#upper-footer{
+    padding: $section_padding;
+    background: whitesmoke;
+
+
+    .links-box{
+        float: left;
+        padding: $spacing $spacing;
+        width: calc(100% / 4);
+        border: 1px solid black;
+        @include flex(column, flex-start,center);
+
+        h4,span{
+            color: $brand_secondary;
+            padding: ($spacing * 0.3) 0;
+            // border: 1px solid black;
+            display: inline-block;
+        }
+        span{
+            padding: ($spacing * 0.1) 0;
+        }
+    }
+
+}

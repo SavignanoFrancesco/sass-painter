@@ -58,7 +58,7 @@ a {
 .section-type1 h6,
 .section-type1 p,
 .section-type1 span {
-  color: black;
+  color: #222;
 }
 
 .section-type1 h1 {
@@ -366,6 +366,33 @@ header .bottom-header .container ul li i {
 
 .jumbotron .container .jumbo-right .limited-time-offer a:hover {
   text-decoration: underline;
+}
+
+#upper-footer {
+  padding: 40px;
+  background: whitesmoke;
+}
+
+#upper-footer .links-box {
+  float: left;
+  padding: 20px 20px;
+  width: calc(100% / 4);
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#upper-footer .links-box h4,
+#upper-footer .links-box span {
+  color: black;
+  padding: 6px 0;
+  display: inline-block;
+}
+
+#upper-footer .links-box span {
+  padding: 2px 0;
 }
 
 .section-type1,
