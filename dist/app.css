@@ -126,6 +126,38 @@ header .bottom-header .container ul li i {
   font-size: 8.4px;
 }
 
+#secondary-navbar {
+  background: whitesmoke;
+}
+
+#secondary-navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#secondary-navbar ul li a span {
+  display: block;
+  padding: 14px;
+  font-size: 18.2px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.6);
+  border: 4px solid whitesmoke;
+}
+
+#secondary-navbar ul li a span:hover {
+  background: #fafafa;
+  border-bottom: 4px solid #fafafa;
+}
+
+#secondary-navbar ul li a span.active {
+  background: white;
+  color: black;
+  font-weight: bolder;
+  border-bottom: 4px solid black;
+}
+
 .jumbotron {
   background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg");
   background-size: cover;
