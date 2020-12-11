@@ -1,0 +1,10 @@
+.section-type1, .section-type2{
+    text-align: center;
+    h1{
+        font-size: $font_size * 2.5;
+    }
+    p{
+        font-size: $font_size * 1.4;
+        font-weight: lighter;
+    }
+}

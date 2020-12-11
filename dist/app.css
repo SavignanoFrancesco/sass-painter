@@ -46,15 +46,43 @@ a {
 }
 
 .section-type1 {
-  background: #222;
-  color: white;
+  background: white;
   padding: 40px 0;
 }
 
-.section-type2 {
-  background: white;
+.section-type1 h1,
+.section-type1 h2,
+.section-type1 h3,
+.section-type1 h4,
+.section-type1 h5,
+.section-type1 h6,
+.section-type1 p,
+.section-type1 span {
   color: black;
+}
+
+.section-type1 h1 {
+  padding: 20px 0;
+}
+
+.section-type2 {
+  background: #222;
   padding: 40px 0;
+}
+
+.section-type2 h1,
+.section-type2 h2,
+.section-type2 h3,
+.section-type2 h4,
+.section-type2 h5,
+.section-type2 h6,
+.section-type2 p,
+.section-type2 span {
+  color: white;
+}
+
+.section-type2 h1 {
+  padding: 20px 0;
 }
 
 header {
@@ -338,5 +366,21 @@ header .bottom-header .container ul li i {
 
 .jumbotron .container .jumbo-right .limited-time-offer a:hover {
   text-decoration: underline;
+}
+
+.section-type1,
+.section-type2 {
+  text-align: center;
+}
+
+.section-type1 h1,
+.section-type2 h1 {
+  font-size: 35px;
+}
+
+.section-type1 p,
+.section-type2 p {
+  font-size: 19.6px;
+  font-weight: lighter;
 }
 
