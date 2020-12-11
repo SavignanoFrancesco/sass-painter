@@ -45,6 +45,18 @@ a {
   color: unset;
 }
 
+.section-type1 {
+  background: #222;
+  color: white;
+  padding: 40px 0;
+}
+
+.section-type2 {
+  background: white;
+  color: black;
+  padding: 40px 0;
+}
+
 header {
   background: rgba(0, 0, 0, 0.95);
 }
