@@ -1,5 +1,5 @@
 #upper-footer{
-    padding: $section_padding;
+    padding: $section_padding * 0.3;
     background: whitesmoke;
 
 
@@ -75,7 +75,7 @@
 }
 
 #bottom-footer{
-    padding: $section_padding * 0.4;
+    padding: $section_padding * 0.2;
     background: rgba($brand_secondary, 0.9);
     .container{
         // @include flex(row, space-between, center);

@@ -297,7 +297,7 @@ header .bottom-header .container ul li i {
 }
 
 #upper-footer {
-  padding: 80px;
+  padding: 24px;
   background: whitesmoke;
 }
 #upper-footer .links-box {
@@ -365,7 +365,7 @@ header .bottom-header .container ul li i {
 }
 
 #bottom-footer {
-  padding: 32px;
+  padding: 16px;
   background: rgba(0, 0, 0, 0.9);
 }
 #bottom-footer .container .img-links {
