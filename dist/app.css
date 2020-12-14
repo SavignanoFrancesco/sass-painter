@@ -422,10 +422,10 @@ header .bottom-header .container ul li i {
   align-items: center;
 }
 #quick-start .container a i {
-  color: grey;
+  color: rgba(255, 255, 255, 0.7);
   font-size: 18.2px;
   padding: 10px;
-  border: 1px solid grey;
+  border: 1px solid rgba(255, 255, 255, 0.7);
   border-radius: 50%;
 }
 #quick-start .container a span {
@@ -434,7 +434,7 @@ header .bottom-header .container ul li i {
   font-size: 18.2px;
 }
 #quick-start .container .video-box {
-  width: 95%;
+  width: 90%;
   position: relative;
   background-size: cover;
   z-index: 1;
