@@ -50,7 +50,7 @@ a {
 }
 
 .section-type2 {
-  background: rgba(0, 0, 0, 0.9);
+  background: #222222;
   padding: 80px 0;
 }
 .section-type2 h1, .section-type2 h2, .section-type2 h3, .section-type2 h4, .section-type2 h5, .section-type2 h6, .section-type2 p, .section-type2 span {
@@ -464,4 +464,100 @@ header .bottom-header .container ul li i {
 }
 #quick-start .container .video-box i:hover {
   color: rgba(255, 255, 255, 0.8);
+}
+
+#carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  height: 650px;
+}
+#carousel i {
+  font-size: 35px;
+  color: #e65c00;
+}
+#carousel i:hover {
+  color: rgba(230, 92, 0, 0.5);
+  cursor: pointer;
+}
+#carousel .back-arrow {
+  width: 10%;
+}
+#carousel .active-img {
+  position: relative;
+  height: 100%;
+  width: 80%;
+}
+#carousel .active-img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#carousel .active-img .img-effect {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 50%;
+  top: 50%;
+  left: 25%;
+}
+#carousel .active-img .img-effect img {
+  height: 100%;
+  width: 100%;
+  border-right: 2px solid rgba(0, 0, 0, 0.5);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
+}
+#carousel .active-img i {
+  font-size: 16.8px;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 5%;
+  padding: 4px 0;
+  top: 50%;
+  left: 50%;
+  color: white;
+}
+#carousel .forward-arrow {
+  width: 10%;
+}
+
+#flexible-photo-painting-tools {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#flexible-photo-painting-tools img {
+  width: 70%;
+  padding: 40px 0;
+}
+#flexible-photo-painting-tools .experiment-black-canvas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+#flexible-photo-painting-tools .experiment-black-canvas .text {
+  width: 35%;
+  text-align: left;
+  padding: 20px;
+}
+#flexible-photo-painting-tools .experiment-black-canvas .text h3 {
+  font-size: 22.4px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#flexible-photo-painting-tools .experiment-black-canvas .image {
+  width: 65%;
+}
+#flexible-photo-painting-tools .experiment-black-canvas .image img {
+  width: 90%;
 }
