@@ -13,7 +13,6 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .container::after {
   clear: both;
   display: table;
@@ -26,13 +25,7 @@ body {
   content: "";
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-span {
+h1, h2, h3, h4, h5, h6, span {
   color: white;
 }
 
@@ -46,41 +39,23 @@ a {
 }
 
 .section-type1 {
-  background: white;
-  padding: 40px 0;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 80px 0;
 }
-
-.section-type1 h1,
-.section-type1 h2,
-.section-type1 h3,
-.section-type1 h4,
-.section-type1 h5,
-.section-type1 h6,
-.section-type1 p,
-.section-type1 span {
-  color: #222;
+.section-type1 h1, .section-type1 h2, .section-type1 h3, .section-type1 h4, .section-type1 h5, .section-type1 h6, .section-type1 p, .section-type1 span {
+  color: black;
 }
-
 .section-type1 h1 {
   padding: 20px 0;
 }
 
 .section-type2 {
-  background: #222;
-  padding: 40px 0;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 80px 0;
 }
-
-.section-type2 h1,
-.section-type2 h2,
-.section-type2 h3,
-.section-type2 h4,
-.section-type2 h5,
-.section-type2 h6,
-.section-type2 p,
-.section-type2 span {
+.section-type2 h1, .section-type2 h2, .section-type2 h3, .section-type2 h4, .section-type2 h5, .section-type2 h6, .section-type2 p, .section-type2 span {
   color: white;
 }
-
 .section-type2 h1 {
   padding: 20px 0;
 }
@@ -88,33 +63,27 @@ a {
 header {
   background: rgba(0, 0, 0, 0.95);
 }
-
 header .upper-header ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
 }
-
 header .upper-header ul li {
   padding: 10px 10px;
 }
-
 header .upper-header ul li span {
   color: rgba(255, 255, 255, 0.5);
   padding: 0 5px;
   font-size: 12.6px;
 }
-
 header .upper-header ul li span:hover {
   color: white;
   text-decoration: underline;
 }
-
 header .upper-header ul li i {
   color: dodgerblue;
 }
-
 header .bottom-header .container {
   display: flex;
   flex-direction: row;
@@ -122,12 +91,10 @@ header .bottom-header .container {
   align-items: center;
   flex-wrap: wrap;
 }
-
 header .bottom-header .container .logo {
   padding: 8px;
   width: 75%;
 }
-
 header .bottom-header .container ul {
   display: flex;
   flex-direction: row;
@@ -135,20 +102,15 @@ header .bottom-header .container ul {
   align-items: center;
   flex-wrap: wrap;
 }
-
 header .bottom-header .container ul li {
   padding: 18px 20px;
   font-size: 14px;
 }
-
-header .bottom-header .container ul li:hover,
-header .bottom-header .container ul li:hover span,
-header .bottom-header .container ul li:hover i {
+header .bottom-header .container ul li:hover, header .bottom-header .container ul li:hover span, header .bottom-header .container ul li:hover i {
   cursor: pointer;
   background: white;
   color: black;
 }
-
 header .bottom-header .container ul li i {
   color: rgba(255, 255, 255, 0.7);
   font-size: 8.4px;
@@ -157,14 +119,12 @@ header .bottom-header .container ul li i {
 #secondary-navbar {
   background: whitesmoke;
 }
-
 #secondary-navbar ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
-
 #secondary-navbar ul li a span {
   display: block;
   padding: 14px;
@@ -172,12 +132,10 @@ header .bottom-header .container ul li i {
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.6);
 }
-
 #secondary-navbar ul li a span:hover {
   background: #fafafa;
   border-bottom: 4px solid #fafafa;
 }
-
 #secondary-navbar ul li a span.active {
   background: white;
   color: black;
@@ -191,7 +149,6 @@ header .bottom-header .container ul li i {
   background-position: center;
   background-repeat: no-repeat;
 }
-
 .jumbotron .container {
   height: 480px;
   display: flex;
@@ -200,7 +157,6 @@ header .bottom-header .container ul li i {
   align-items: center;
   flex-wrap: wrap;
 }
-
 .jumbotron .container .jumbo-left {
   display: flex;
   flex-direction: row;
@@ -210,12 +166,10 @@ header .bottom-header .container ul li i {
   align-self: flex-end;
   width: 20%;
 }
-
 .jumbotron .container .jumbo-left span {
   color: rgba(255, 255, 255, 0.8);
   font-size: 11.2px;
 }
-
 .jumbotron .container .jumbo-center {
   display: flex;
   flex-direction: column;
@@ -224,32 +178,26 @@ header .bottom-header .container ul li i {
   width: 40%;
   padding: 5px;
 }
-
 .jumbotron .container .jumbo-center li {
   padding: 10px 0;
 }
-
 .jumbotron .container .jumbo-center li h1 {
   font-size: 28px;
   font-weight: lighter;
 }
-
 .jumbotron .container .jumbo-center li h2 {
   font-size: 23.8px;
   font-weight: lighter;
 }
-
 .jumbotron .container .jumbo-center li i {
   color: rgba(255, 255, 255, 0.5);
   font-size: 11.2px;
   align-self: center;
   padding: 2px;
 }
-
 .jumbotron .container .jumbo-center li span {
   font-size: 16.8px;
 }
-
 .jumbotron .container .jumbo-center li .download-button {
   display: flex;
   flex-direction: row;
@@ -259,11 +207,9 @@ header .bottom-header .container ul li i {
   background-color: dimgrey;
   flex-grow: 0;
 }
-
 .jumbotron .container .jumbo-center li .download-button:hover {
   opacity: 0.9;
 }
-
 .jumbotron .container .jumbo-center li .download-button .left {
   display: flex;
   flex-direction: column;
@@ -273,22 +219,18 @@ header .bottom-header .container ul li i {
   padding: 0px 10px;
   border-right: 1px solid white;
 }
-
 .jumbotron .container .jumbo-center li .download-button .left h2 {
   font-size: 14px;
   text-transform: uppercase;
 }
-
 .jumbotron .container .jumbo-center li .download-button .left span {
   font-size: 11.2px;
 }
-
 .jumbotron .container .jumbo-center li .download-button .right i {
   color: white;
   font-size: 28px;
   padding: 5px 10px;
 }
-
 .jumbotron .container .jumbo-right {
   display: flex;
   flex-direction: column;
@@ -301,42 +243,34 @@ header .bottom-header .container ul li i {
   position: relative;
   background: black;
 }
-
 .jumbotron .container .jumbo-right > * {
   margin: 10px 0;
 }
-
 .jumbotron .container .jumbo-right .price > * {
   padding: 2px 0;
 }
-
 .jumbotron .container .jumbo-right .price h2 {
   font-weight: lighter;
   font-size: 28px;
 }
-
 .jumbotron .container .jumbo-right .price span {
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.6);
   font-size: 15.4px;
 }
-
 .jumbotron .container .jumbo-right img {
   position: absolute;
   top: 10px;
   right: 20px;
 }
-
 .jumbotron .container .jumbo-right .buy-button {
   padding: 10px 40px;
   background: rgba(30, 144, 255, 0.9);
   text-transform: uppercase;
 }
-
 .jumbotron .container .jumbo-right .buy-button:hover {
   background: dodgerblue;
 }
-
 .jumbotron .container .jumbo-right .limited-time-offer {
   display: flex;
   flex-direction: column;
@@ -345,34 +279,27 @@ header .bottom-header .container ul li i {
   background: white;
   padding: 10px;
 }
-
 .jumbotron .container .jumbo-right .limited-time-offer > * {
   padding: 4px;
 }
-
-.jumbotron .container .jumbo-right .limited-time-offer h3,
-.jumbotron .container .jumbo-right .limited-time-offer span {
+.jumbotron .container .jumbo-right .limited-time-offer h3, .jumbotron .container .jumbo-right .limited-time-offer span {
   color: black;
 }
-
 .jumbotron .container .jumbo-right .limited-time-offer h3 {
   font-size: 16.8px;
   text-transform: uppercase;
 }
-
 .jumbotron .container .jumbo-right .limited-time-offer a {
   color: dodgerblue;
 }
-
 .jumbotron .container .jumbo-right .limited-time-offer a:hover {
   text-decoration: underline;
 }
 
 #upper-footer {
-  padding: 40px;
+  padding: 80px;
   background: whitesmoke;
 }
-
 #upper-footer .links-box {
   float: left;
   padding: 20px 20px;
@@ -382,31 +309,25 @@ header .bottom-header .container ul li i {
   justify-content: flex-start;
   align-items: flex-start;
 }
-
-#upper-footer .links-box h4,
-#upper-footer .links-box span {
+#upper-footer .links-box h4, #upper-footer .links-box span {
   color: black;
   padding: 6px 0;
   display: inline-block;
   font-weight: lighter;
   font-size: 15.4px;
 }
-
 #upper-footer .links-box span {
   padding: 4px 0;
   font-size: 12.6px;
   color: rgba(0, 0, 0, 0.7);
 }
-
 #upper-footer .links-box span:hover {
   text-decoration: underline;
 }
-
 #upper-footer .socials-container {
   float: right;
   padding: 20px;
 }
-
 #upper-footer .socials-container .icon-box {
   display: flex;
   flex-direction: row;
@@ -417,53 +338,42 @@ header .bottom-header .container ul li i {
   margin: 4px;
   float: left;
 }
-
 #upper-footer .socials-container .icon-box:nth-child(1) {
   background: #e4405f;
 }
-
 #upper-footer .socials-container .icon-box:nth-child(2) {
   background: darkslateblue;
 }
-
 #upper-footer .socials-container .icon-box:nth-child(3) {
   background: dodgerblue;
 }
-
 #upper-footer .socials-container .icon-box:nth-child(4) {
   background: firebrick;
 }
-
 #upper-footer .socials-container .icon-box:nth-child(5) {
   background: firebrick;
 }
-
 #upper-footer .socials-container .icon-box:nth-child(6) {
   background: sandybrown;
 }
-
 #upper-footer .socials-container .icon-box i {
   font-size: 22.4px;
   color: white;
 }
-
 #upper-footer .socials-container .icon-box:hover {
   cursor: pointer;
 }
 
 #bottom-footer {
-  padding: 16px;
+  padding: 32px;
   background: rgba(0, 0, 0, 0.9);
 }
-
 #bottom-footer .container .img-links {
   float: left;
 }
-
 #bottom-footer .container .img-links img {
   margin: 0 10px;
 }
-
 #bottom-footer .container .terms {
   padding: 20px 0;
   float: right;
@@ -472,39 +382,86 @@ header .bottom-header .container ul li i {
   justify-content: space-between;
   align-items: center;
 }
-
 #bottom-footer .container .terms > * {
   font-size: 12.6px;
   padding: 0 10px;
 }
-
 #bottom-footer .container .terms span {
   display: inline-block;
   color: rgba(255, 255, 255, 0.6);
 }
-
 #bottom-footer .container .terms span:hover {
   text-decoration: underline;
   cursor: pointer;
 }
-
 #bottom-footer .container .terms p {
   color: white;
 }
 
-.section-type1,
-.section-type2 {
+.section-type1, .section-type2 {
   text-align: center;
 }
-
-.section-type1 h1,
-.section-type2 h1 {
+.section-type1 h1, .section-type2 h1 {
   font-size: 35px;
 }
-
-.section-type1 p,
-.section-type2 p {
+.section-type1 p, .section-type2 p {
   font-size: 19.6px;
   font-weight: lighter;
 }
 
+#quick-start {
+  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/intro.jpg");
+  background-size: cover;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+#quick-start .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#quick-start .container a i {
+  color: grey;
+  font-size: 18.2px;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 50%;
+}
+#quick-start .container a span {
+  display: inline-block;
+  padding: 40px 5px;
+  font-size: 18.2px;
+}
+#quick-start .container .video-box {
+  width: 95%;
+  position: relative;
+  background-size: cover;
+  z-index: 1;
+  margin-bottom: -3.9px;
+}
+#quick-start .container .video-box img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+}
+#quick-start .container .video-box img.layer2 {
+  width: 98.3%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+}
+#quick-start .container .video-box i {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  font-size: 168px;
+  color: white;
+}
+#quick-start .container .video-box i:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
